@@ -1,4 +1,105 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #dadada;
+  background-color: #DDDDDD;
+  background-repeat: no-repeat;
   font-size: 10px;
+}
+
+.container h1 {
+  font-size: 1.5em;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-bottom: 3%;
+  text-align: center;
+  padding-top: 8%;
+}
+
+.preview h1 {
+  font-family: serif;
+  text-transform: none;
+  letter-spacing: 1px;
+  font-size: 2em;
+  padding-left: 5%;
+  text-align: left;
+}
+
+.container {
+  background-color: #DDDDDD;
+  margin: 0 auto;
+}
+
+.title {
+  background-color: #EEEEEE;
+  width: 100%;
+}
+
+
+/***images***/
+
+
+.preview {
+  display: block;
+  margin: 20px auto 0 auto;
+  height: 350px;
+  width: 500px;
+}
+
+.baku {
+  background-image: url(../images/baku.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+.london {
+  background-image: url(../images/london.png);
+  background-size: cover;
+  width: 100%;
+}
+
+.madrid {
+  background-image: url(../images/madrid.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+.rome {
+  background-image: url(../images/rome.jpg);
+  background-size: cover;
+  width: 100%;
+}
+
+
+/***tablet view***/
+
+
+@media screen and (min-width: 575px) {
+  .preview {
+    display: inline-block;
+    margin: 2%;
+    height: 175px;
+    width: 45%;
+  }
+  .preview h1 {
+    font-size: 2em;
+    padding: 10% 0 0 20px;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .preview {
+    display: inline-block;
+    margin: 2%;
+    height: 200px;
+    width: 20%;
+
+  }
+  
+  .preview h1 {
+    font-size: 2em;
+    padding: 15px 0 0 10px;
+  }
 }
